@@ -157,3 +157,67 @@ df.replace(-999, np.nan)
   </tbody>
 </table>
 </div>
+
+### Replace a Sub-String Value
+
+
+```python
+df[first_name] = df['first_name'].str.replace('Ja','JJJJ')
+```
+
+<div>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>first_name</th>
+      <th>last_name</th>
+      <th>age</th>
+      <th>preTestScore</th>
+      <th>postTestScore</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>JJJJson</td>
+      <td>Miller</td>
+      <td>42</td>
+      <td>NaN</td>
+      <td>2.0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Molly</td>
+      <td>Jacobson</td>
+      <td>52</td>
+      <td>NaN</td>
+      <td>2.0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Tina</td>
+      <td>Ali</td>
+      <td>36</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>JJJJke</td>
+      <td>Milner</td>
+      <td>24</td>
+      <td>2.0</td>
+      <td>2.0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Amy</td>
+      <td>Cooze</td>
+      <td>73</td>
+      <td>1.0</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table>
+</div>
